@@ -10,6 +10,10 @@
 		D978F53B1D99B6ED000E2DEE /* MoviesCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D978F53A1D99B6ED000E2DEE /* MoviesCollectionViewController.m */; };
 		D978F53E1D99B7F8000E2DEE /* MovieCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D978F53D1D99B7F8000E2DEE /* MovieCell.m */; };
 		D978F5411D99D5C6000E2DEE /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D978F5401D99D5C6000E2DEE /* DetailViewController.m */; };
+		D97FA8251D9B021600CB1921 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D97FA8241D9B021600CB1921 /* CoreLocation.framework */; };
+		D97FA8271D9B021E00CB1921 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D97FA8261D9B021E00CB1921 /* MapKit.framework */; };
+		D97FA82A1D9B02A600CB1921 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D97FA8291D9B02A600CB1921 /* MapViewController.m */; };
+		D97FA82D1D9B2B7900CB1921 /* Theatre.m in Sources */ = {isa = PBXBuildFile; fileRef = D97FA82C1D9B2B7900CB1921 /* Theatre.m */; };
 		D9F06A0E1D99A17E009318C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F06A0D1D99A17E009318C9 /* main.m */; };
 		D9F06A111D99A17E009318C9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F06A101D99A17E009318C9 /* AppDelegate.m */; };
 		D9F06A171D99A17E009318C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9F06A151D99A17E009318C9 /* Main.storyboard */; };
@@ -25,6 +29,12 @@
 		D978F53D1D99B7F8000E2DEE /* MovieCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieCell.m; sourceTree = "<group>"; };
 		D978F53F1D99D5C6000E2DEE /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		D978F5401D99D5C6000E2DEE /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		D97FA8241D9B021600CB1921 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		D97FA8261D9B021E00CB1921 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		D97FA8281D9B02A600CB1921 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		D97FA8291D9B02A600CB1921 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		D97FA82B1D9B2B7900CB1921 /* Theatre.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Theatre.h; sourceTree = "<group>"; };
+		D97FA82C1D9B2B7900CB1921 /* Theatre.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Theatre.m; sourceTree = "<group>"; };
 		D9F06A091D99A17E009318C9 /* RottenMangoes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RottenMangoes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9F06A0D1D99A17E009318C9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D9F06A0F1D99A17E009318C9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -42,17 +52,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D97FA8271D9B021E00CB1921 /* MapKit.framework in Frameworks */,
+				D97FA8251D9B021600CB1921 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D97FA8231D9B021600CB1921 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D97FA8261D9B021E00CB1921 /* MapKit.framework */,
+				D97FA8241D9B021600CB1921 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D9F06A001D99A17E009318C9 = {
 			isa = PBXGroup;
 			children = (
 				D9F06A0B1D99A17E009318C9 /* RottenMangoes */,
 				D9F06A0A1D99A17E009318C9 /* Products */,
+				D97FA8231D9B021600CB1921 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +99,10 @@
 				D978F53D1D99B7F8000E2DEE /* MovieCell.m */,
 				D978F53F1D99D5C6000E2DEE /* DetailViewController.h */,
 				D978F5401D99D5C6000E2DEE /* DetailViewController.m */,
+				D97FA8281D9B02A600CB1921 /* MapViewController.h */,
+				D97FA8291D9B02A600CB1921 /* MapViewController.m */,
+				D97FA82B1D9B2B7900CB1921 /* Theatre.h */,
+				D97FA82C1D9B2B7900CB1921 /* Theatre.m */,
 			);
 			path = RottenMangoes;
 			sourceTree = "<group>";
@@ -167,11 +193,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9F06A111D99A17E009318C9 /* AppDelegate.m in Sources */,
+				D97FA82D1D9B2B7900CB1921 /* Theatre.m in Sources */,
 				D978F53E1D99B7F8000E2DEE /* MovieCell.m in Sources */,
 				D9F06A251D99AAD7009318C9 /* Movie.m in Sources */,
 				D978F53B1D99B6ED000E2DEE /* MoviesCollectionViewController.m in Sources */,
 				D9F06A0E1D99A17E009318C9 /* main.m in Sources */,
 				D978F5411D99D5C6000E2DEE /* DetailViewController.m in Sources */,
+				D97FA82A1D9B02A600CB1921 /* MapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
